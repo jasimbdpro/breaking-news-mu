@@ -24,7 +24,7 @@ function App() {
     <div>
       <h2>Headlines Number: {articles.length}</h2>
       {
-        articles.map(i => <News article={i}></News>)
+        articles.map((i, index) => <News key={index} article={i}></News>)
       }
     </div>
   );
